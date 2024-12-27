@@ -1,0 +1,67 @@
+body {
+    padding-top: 150px;
+}
+
+.container.detail-container {
+    margin-top: 150px; /* Sesuaikan dengan tinggi navbar */
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.detail-container img {
+    width: 100%; /* Agar gambar memenuhi lebar kolom */
+    max-width: 300px; /* Atau ukuran tetap yang diinginkan */
+    height: auto; /* Agar tetap menjaga proporsi */
+    object-fit: cover; /* Potong gambar agar sesuai ukuran */
+    border: 1px solid #ddd; /* Tambahkan batas jika perlu */
+    border-radius: 8px; /* Agar lebih estetis */
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-md-6 {
+    padding: 20px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.btn {
+    margin: 10px 5px;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+

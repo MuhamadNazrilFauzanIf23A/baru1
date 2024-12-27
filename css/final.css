@@ -1,0 +1,139 @@
+/* Navbar */
+.sidebar {
+ background-color: rgba(255, 255, 255, 0.60);
+ backdrop-filter: blur(10px);
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    width: 200px; /* Lebar dropdown */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    border-radius: 8px; /* Sudut membulat */
+    border: none; /* Hilangkan border */
+    padding: 10px; /* Padding dalam dropdown */
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px; /* Ukuran teks */
+    font-weight: 500; /* Tebal teks */
+    color: #000000; /* Warna teks */
+}
+
+.dropdown-item:hover {
+    background-color: #f5f5f5; /* Warna saat hover */
+    border-radius: 6px; /* Sudut membulat saat hover */
+}
+
+/* Nama pengguna di dropdown */
+.dropdown-header {
+    display: flex;
+    color: black;
+    align-items: center;
+    gap: 10px; /* Jarak antara gambar dan teks */
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef; /* Garis bawah */
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Gambar profil di dropdown */
+.dropdown-header img {
+    width: 40px; /* Tentukan lebar gambar */
+    height: 40px; /* Tentukan tinggi gambar */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    object-fit: cover; /* Memastikan gambar menutupi area tanpa distorsi */
+    object-position: center; /* Menjaga gambar tetap terpusat di dalam lingkaran */
+}
+
+
+/* Nama pengguna di dropdown */
+.dropdown-header span {
+    font-size: 16px; /* Ukuran teks */
+    font-weight: 600; /* Berat font */
+    flex-shrink: 1; /* Membuat teks menyusut jika ruang terbatas */
+    white-space: nowrap; /* Menghindari pembungkusan teks */
+    overflow: hidden; /* Menyembunyikan teks yang melebihi batas */
+    text-overflow: ellipsis; /* Menambahkan elipsis jika teks terpotong */
+}
+
+/* Card mobil */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card-img-top {
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.card {
+    min-height: 50px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%; 
+    }
+}
+
+.background {
+    background: url('../Foto/backgroundhal.jpg') no-repeat center center/cover;
+    height: 500px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; /* Tambahkan posisi relatif untuk elemen ini */
+    overflow: hidden; /* Pastikan elemen anak tidak melampaui batas */
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay warna hitam dengan transparansi */
+    z-index: 1; /* Letakkan overlay di atas background */
+}
+
+.text-container {
+    position: relative; /* Pastikan teks berada di atas overlay */
+    z-index: 2; /* Letakkan teks di atas overlay */
+}
+
+
+ @media (max-width: 768px) {
+    .background {
+        height: 50vh;
+    }
+}
+
+/* modal */
+ .modal-dialog {
+    margin-top: 130px;
+ }
+
+ /* footer */
+footer.bg-dark {  
+    width: 100%;
+}

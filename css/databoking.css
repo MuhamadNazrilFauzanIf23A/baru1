@@ -1,0 +1,128 @@
+/* Tambahkan border ke tabel */
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table thead tr {
+    background-color: #007bff; /* Warna biru untuk header tabel */
+    color: white; /* Warna teks putih */
+}
+
+.table th, .table td {
+    border: 1px solid #ddd; /* Tambahkan border tipis */
+    padding: 8px; /* Jarak antar sel */
+    text-align: center; /* Pusatkan teks */
+    vertical-align: middle; /* Pusatkan secara vertikal */
+}
+
+.table th {
+    font-weight: bold;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Warna latar belakang untuk baris genap */
+}
+
+.table tbody tr:hover {
+    background-color: #ddd; /* Warna saat baris di-hover */
+}
+
+/* Styling untuk gambar */
+.table img {
+    max-width: 100px; /* Ukuran maksimal untuk gambar */
+    max-height: 80px;
+    object-fit: cover;
+    border-radius: 5px; /* Sudut melengkung */
+}
+
+/* Tombol aksi */
+.btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    margin: 2px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Warna hijau lebih gelap saat di-hover */
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Warna merah lebih gelap saat di-hover */
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* Warna abu-abu lebih gelap saat di-hover */
+}
+
+/* Styling untuk container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Heading utama */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Pesan tidak ada pemesanan */
+.text-center {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Tambahkan animasi hover */
+.table tbody tr:hover td {
+    transition: background-color 0.3s ease;
+}
+
+/* Responsivitas untuk tampilan kecil */
+@media (max-width: 768px) {
+    .table img {
+        max-width: 60px;
+        max-height: 50px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .table th, .table td {
+        padding: 6px;
+        font-size: 14px;
+    }
+}
